@@ -1,6 +1,7 @@
 <template>
     <header>
-        <div>
+        <div id="container">
+            <div>
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
         <div id="menu">
@@ -9,6 +10,7 @@
                     <a :href="link.url">{{link.text}}</a>
                 </li>
             </ul>
+        </div>
         </div>
     </header>
 </template>
@@ -69,10 +71,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     header {
+        background-color: white;
+    }
+
+    #container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        width: 80%;
+        margin: auto;
     }
     li {
         display: inline;

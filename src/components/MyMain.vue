@@ -1,21 +1,25 @@
 <template>
     <main>
-      <div id="primaparte">
-        Content goes here
+      <div id="primocontainer">
+        <div id="primaparte">
+          Content goes here
+        </div>
       </div>
-      <div id="secondaparte">
-         <ul>
-           <li v-for="(link, i) in links" :key="i">
-              <a :href="link.url">
-                <div>
-                  <img :src="link.img" alt="">
-                </div>
-                <div>
-                  {{link.text}}
-                </div>
-              </a>
-           </li>
-         </ul>
+      <div id="secondocontainer">
+        <div id="secondaparte">
+           <ul>
+             <li v-for="(link, i) in links" :key="i">
+                <a :href="link.url">
+                  <div>
+                    <img :src="link.img" alt="">
+                  </div>
+                  <div>
+                    {{link.text}}
+                  </div>
+                </a>
+             </li>
+           </ul>
+        </div>
       </div>
     </main>
 </template>
@@ -59,14 +63,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+    #primocontainer {
+      background-color: black;
+    }
     #primaparte {
       color: white;
-      background-color: black;
       font-size: 20px;
+      width: 80%;
+      margin: auto;
     }
 
-    #secondaparte {
+    #secondocontainer {
       background-color: blue;
+
+    }
+    #secondaparte {
       display: flex;
       justify-content: center;
     }
