@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div id="container">
+        <div id="primocontainer">
             <div id="primaparte">
                 <div>
                     <div>
@@ -37,8 +37,16 @@
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <div id="secondocontainer">
             <div id="secondaparte">
-    
+                <div>
+                    <h2 id="button">SIGN-UP NOW!</h2>
+                </div>
+                <div>
+                    <h2 id="segui">FOLLOW US</h2>
+                </div>
             </div>
         </div>
 
@@ -168,7 +176,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    #container {
+    #primocontainer {
         background-image: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -179,11 +187,32 @@ export default {
         color: white;
         display: flex;
         justify-content: flex-start;
+        width: 80%;
+        margin: auto;
+        padding: 40px 0;
     }
 
-    #secondaparte {
+    ul {
+        padding-right: 30px;
+    }
+
+    li {
+        padding: 2px 0;
+    }
+
+    h3 {
+        padding: 10px 0;
+    }
+
+    #secondocontainer {
         background-color: grey;
-        height: 100px;
+    }
+    #secondaparte {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     li {
@@ -193,5 +222,16 @@ export default {
     a {
         color: rgb(96, 96, 96);
         text-decoration: none;
+    }
+
+    #button {
+        color: white;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    #segui {
+        color: blue;
     }
 </style>

@@ -2,7 +2,7 @@
     <main>
       <div id="primocontainer">
         <div id="primaparte">
-          Content goes here
+          <h1>--> Content goes here</h1>
         </div>
       </div>
       <div id="secondocontainer">
@@ -10,10 +10,8 @@
            <ul>
              <li v-for="(link, i) in links" :key="i">
                 <a :href="link.url">
-                  <div>
-                    <img :src="link.img" alt="">
-                  </div>
-                  <div>
+                  <img :src="link.img" alt="">
+                  <div id="text">
                     {{link.text}}
                   </div>
                 </a>
@@ -81,6 +79,11 @@ export default {
     #secondaparte {
       display: flex;
       justify-content: center;
+      padding: 40px 0;
+    }
+
+    #secondaparte ul li a div {
+      padding: 0 10px;
     }
 
     li {

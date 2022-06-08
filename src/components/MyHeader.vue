@@ -87,12 +87,13 @@ export default {
     }
     a:hover {
         color: blue;
-        border-bottom: solid blue 2px;
+        border-bottom: solid blue 5px;
     }
 
     a {
         color: black;
         text-decoration: none;
+        padding: 40px 0;
     }
 
 </style>
