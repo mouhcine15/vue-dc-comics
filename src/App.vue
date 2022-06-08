@@ -1,22 +1,32 @@
 <template>
   <div id="app">
-    <Header/>
+    <MyHeader/>
+    <MyMain/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import MyHeader from './components/MyHeader.vue'
+import MyMain from './components/MyMain.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    MyHeader,
+    MyMain
   }
 }
 </script>
 
 <style>
-#app {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-}
+  #app {
+    width: 100vw;
+  }
 </style>

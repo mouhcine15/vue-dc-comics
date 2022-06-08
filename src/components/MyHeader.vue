@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'myHeader',
+  name: 'MyHeader',
   data(){
       return {
           links: [
@@ -68,9 +68,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
     li {
         display: inline;
         padding: 10px;
+    }
+    a:hover {
+        color: blue;
+        border-bottom: solid blue 2px;
     }
 
     a {
@@ -78,10 +88,4 @@ export default {
         text-decoration: none;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-    }
 </style>
