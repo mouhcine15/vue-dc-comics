@@ -2,7 +2,16 @@
     <main>
       <div id="primocontainer">
         <div id="primaparte">
-          <h1>--> Content goes here</h1>
+          <ul>
+             <li v-for="(link, i) in prodotti" :key="i">
+                <a :href="link.url">
+                  <img :src="link.thumb" alt="">
+                  <div id="text">
+                    {{}}
+                  </div>
+                </a>
+             </li>
+           </ul>
         </div>
       </div>
       <div id="secondocontainer">
@@ -55,12 +64,15 @@ export default {
              }
           ]
       }
+  },
+  props: {
+    prodotti: Array,
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 
     #primocontainer {
       background-color: black;
