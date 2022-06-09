@@ -36,6 +36,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
 
@@ -46,6 +47,13 @@
                 </div>
                 <div>
                     <h2 id="segui">FOLLOW US</h2>
+                    <div>
+                        <img src="../assets/img/footer-facebook.png" alt="">
+                        <img src="../assets/img/footer-twitter.png" alt="">
+                        <img src="../assets/img/footer-youtube.png" alt="">
+                        <img src="../assets/img/footer-pinterest.png" alt="">
+                        <img src="../assets/img/footer-periscope.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

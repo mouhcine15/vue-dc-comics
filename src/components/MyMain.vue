@@ -6,6 +6,9 @@
       <div id="container">
         <div id="primocontainer">
           <div id="primaparte">
+            <div id="current">
+              CURRENT SERIES
+            </div>
             <ul>
                <li v-for="(link, i) in prodotti" :key="i">
                   <a :href="link.url">
@@ -16,6 +19,9 @@
                   </a>
                </li>
              </ul>
+             <div id="more">
+                LOAD MORE
+             </div>
           </div>
         </div>
         <div id="secondocontainer">
@@ -91,6 +97,15 @@ export default {
       font-size: 20px;
       width: 80%;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #current {
+        background-color: blue;
+        width: fit-content;
+        padding: 10px;
+      }
 
       ul {
         display: flex;
@@ -118,6 +133,12 @@ export default {
           }
           }
         }
+      }
+      #more {
+        background-color: blue;
+        width: fit-content;
+        padding: 10px;
+        margin: 20px;
       }
     }
 
